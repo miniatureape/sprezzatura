@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sprezzatura</title>
+        <style>
+
+            body {
+                font-family: Georgia;
+                line-height: 30px;
+            }
+
+            #demo {
+                width: 500px;
+                height: 300px;
+                border: 1px solid #eee;
+                outline: none;
+                -moz-transition: background-color 0.6s;
+                -o-transition: background-color 0.6s;
+                -webkit-transition: background-color 0.6s;
+                transition: background-color 0.6s;
+                padding: 20px
+            }
+
+            .wrapper {
+                max-width: 500px;
+                margin: 50px auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <p><em>Sprezzatura</em></p>
+            <p>So much information about the writing proccess is lost in the end product.</p>
+            <p>This is a little visualization that attempts to put some of it back in. As you type, the color of the text area will change. A text written freely, without edits, will appear green, while one where the writer has deleted and rewrote will appear more red.</p>
+            <p>The hope is that in a glance one can tell something about the process.</p>
+            <textarea id="demo" placeholder="type and press backspace and then type again"></textarea>
+        </div>
+        <script src="sprezzatura.js"></script>
+        <script>
+            var s = new Sprezzatura(document.getElementById('demo'))
+            s.init();
+        </script>
+    </body>
+</html>
