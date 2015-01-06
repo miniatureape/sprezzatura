@@ -6,4 +6,4 @@ This is a little visualization that attempts to put some of it back in. As you t
 
 The hope is that in a glance one can tell something about the process.
 
-(Demo)[http://miniatureape.github.io/sprezzatura/]
+[Demo](http://miniatureape.github.io/sprezzatura/)
